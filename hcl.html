@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCLTech Guardian Partnership</title>
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* NAVBAR */
+header {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0a4fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+}
+
+nav ul li {
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 85vh;
+  width: 100%;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://hcltech.imgix.net/sites/default/files/inline-images/americas-mkt-deal-announcement-1440x500px.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  max-width: 720px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
+.hero button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* TABS */
+.tabs {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.tabs span {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.tabs .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">HCLTech</div>
+
+  <nav>
+    <ul>
+      <li>What We Do</li>
+      <li>Industries</li>
+      <li>Ecosystem</li>
+      <li>Who We Are</li>
+      <li>Resources</li>
+      <li>Careers</li>
+    </ul>
+  </nav>
+
+  <button class="contact-btn">Contact Us →</button>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Guardian Selects HCLTech to Accelerate AI-driven Transformation Journey
+    </h1>
+
+    <p>
+      The partnership will modernize Guardian’s technology operations
+      to scale the business
+    </p>
+
+    <button>Learn more →</button>
+
+    <div class="tabs">
+      <span>India AI Summit</span>
+      <span>Fortune Most Admired</span>
+      <span class="active">Guardian Partnership</span>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
